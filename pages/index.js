@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>MAME'S PORTFOLIO</title>
+        <title>MAME&apos;S PORTFOLIO</title>
         <meta name="description" content="Portfolio page for Omomame Imafidon" />
         <link rel="icon" href="/favicon1.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
