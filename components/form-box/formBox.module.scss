@@ -1,0 +1,272 @@
+$main-color: #7900C4;
+$true-color: #000;
+
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+.contact_form_cont {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+    .home_contact_head {
+        color: #7900C4;
+        text-align: center;
+
+        h3 {
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'Quicksand', sans-serif;
+            margin: 10px 0;
+
+            @include tablet {
+                font-size: 20px;
+            }
+
+            @include mobile {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .home_contact_excerpt {
+        text-align: center;
+        color: #282829;
+        width: 60%;
+
+        @include tablet {
+            width: 80%;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: 'Quicksand', sans-serif;
+
+            @include tablet {
+                font-size: 14px;
+            }
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Quicksand', sans-serif;
+        max-width: 60%;
+
+        @include tablet {
+            width: 80%;
+        }
+
+        .inputs_box {
+            margin: 20px 0;
+            border: 3px solid $main-color;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .form_btn_cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+            .form_btn {
+                background: #7900C4;
+                color: #fff;
+                border: none;
+                text-align: center;
+                width: auto;
+                padding: 10px 40px;
+                font-size: 16px;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                border-radius: 5px;
+                cursor: pointer;
+                box-shadow: #282829 5px 5px;
+                transition: all 0.2s ease;
+
+                @include tablet {
+                    font-size: 12px;
+                    padding: 8px 10px;
+                    box-shadow: #282829 5px 5px;
+
+                    &:hover {
+                        box-shadow: #282829 5px 5px;
+                        background: #6a02ab;
+                    }
+                }
+
+                &:hover {
+                    box-shadow: #282829 10px 10px;
+                }
+            }
+        }
+    }
+
+    .contact_social_cont {
+        padding: 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet {
+            padding: 0px;
+        }
+
+        .whatsapp_btn_cont {
+            position: relative;
+            margin: 10px;
+
+            @include tablet {
+                margin: 10px;
+            }
+
+            .whatsapp_btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #0D8016;
+                color: #fff;
+                border: none;
+                width: auto;
+                padding: 10px 20px;
+                font-size: 16px;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                border-radius: 5px;
+                cursor: pointer;
+                box-shadow: #282829 5px 5px;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    box-shadow: #282829 10px 10px;
+                }
+
+                @include tablet {
+                    font-size: 12px;
+                    padding: 8px 10px;
+                    width: 98px;
+                }
+
+                @include mobile {
+                    padding: 6px;
+                    width: 70px;
+                }
+
+                .icon {
+                    padding-right: 5px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .linkedin_btn_cont {
+            margin: 10px;
+
+            @include tablet {
+                margin: 10px;
+            }
+
+            .linkedin_btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #0072B1;
+                color: #fff;
+                border: none;
+                width: auto;
+                padding: 10px 20px;
+                font-size: 16px;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                border-radius: 5px;
+                cursor: pointer;
+                box-shadow: #282829 5px 5px;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    box-shadow: #282829 10px 10px;
+                }
+
+                @include tablet {
+                    font-size: 12px;
+                    padding: 8px 10px;
+                    width: 98px;
+                }
+
+                @include mobile {
+                    padding: 6px;
+                    width: 70px;
+                }
+
+                .icon {
+                    padding-right: 5px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .twitter_btn_cont {
+            margin: 10px;
+
+            @include tablet {
+                margin: 10px;
+            }
+
+            .twitter_btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #00ACEE;
+                color: #fff;
+                border: none;
+                width: auto;
+                padding: 10px 20px;
+                font-size: 16px;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                border-radius: 5px;
+                cursor: pointer;
+                box-shadow: #282829 5px 5px;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    box-shadow: #282829 10px 10px;
+                }
+
+                @include tablet {
+                    font-size: 12px;
+                    padding: 8px 10px;
+                    width: 98px;
+                }
+
+                @include mobile {
+                    padding: 6px;
+                    width: 70px;
+                }
+
+                .icon {
+                    padding-right: 5px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
